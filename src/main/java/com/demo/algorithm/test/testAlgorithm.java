@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class testAlgorithm {
 
@@ -311,6 +312,28 @@ public class testAlgorithm {
     }
 
 
+    //<<用法 代码中n从零开始 等比数列 第一个数乘以2的次方（n-1）
+    @Test
+    public void paixu(){
+        int n = 8;
+        int i = 4 << n;
+        System.out.println(i);
+
+        System.out.println(4*(Math.pow(2,n-1)));
+
+
+    }
+
+    /**
+     * 正则表达式
+     */
+    @Test
+    public void zhengze(){
+        String pattern = "2321scabc";
+        String content = "^[0-9]+[a-z]{2,4}abc$";
+        boolean flag = pattern.matches(content);
+        System.out.println(flag);
+    }
 
 
 
